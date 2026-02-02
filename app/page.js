@@ -1,11 +1,11 @@
-import FaqSection from "@/Components/FaqSection";
-import FeatureSection from "@/Components/FeatureSection";
-import FeatureSection2 from "@/Components/FeatureSection2";
-import FeatureSection3 from "@/Components/FeatureSection3";
-import Gallary from "@/Components/Gallary";
-import HeroSection from "@/Components/HeroSection";
-import Footer from "@/Components/Footer";
-import Navbar from "@/Components/Navbar";
+import FaqSection from "@/components/FaqSection";
+import FeatureSection from "@/components/FeatureSection";
+import FeatureSection2 from "@/components/FeatureSection2";
+import FeatureSection3 from "@/components/FeatureSection3";
+import Gallary from "@/components/Gallary";
+import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
