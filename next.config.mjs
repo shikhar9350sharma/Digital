@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    // This allows the build to finish even if there are linting errors
+    // This is the important one for you!
+    // It tells Vercel: "Deploy even if I have small warnings like unused variables."
     ignoreDuringBuilds: true,
-  },
-  typescript: {
-    // This allows the build to finish even if there are TS errors
-    ignoreBuildErrors: true,
   },
 };
 
