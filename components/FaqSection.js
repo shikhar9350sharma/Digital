@@ -9,7 +9,7 @@ import {
 
 const FaqSection = () => {
   return (
-    <section className="w-93.75 h-auto flex flex-col gap-15 pt-15 px-5 pb-15 mx-auto md:w-360 md:h-auto md:flex-row md:items-start md:gap-20 md:pt-30 md:px-20 md:pb-30
+    <section className="w-93.75 h-auto flex flex-col gap-15 pt-15 px-5 pb-15 mx-auto md:w-full md:h-auto md:flex-row md:items-start md:gap-20 md:pt-30 md:px-20 md:pb-30
     ">
       
       {/* Left Column */}
