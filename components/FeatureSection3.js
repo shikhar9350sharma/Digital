@@ -1,10 +1,11 @@
 import React from 'react'
+import Image from 'next/image'
 
 const FeatureSection3 = () => {
   return (
     <section className='w-full h-auto flex flex-col gap-10 pt-15 px-5 pb-15 md:flex-row md:justify-between md:gap-20 md:pt-30 md:px-20 md:pb-30'>
         
-        {/* LEFT COLUMN  */}
+        {/* LEFT COLUMN */}
         <div className='w-full md:w-1/2 flex flex-col gap-8 md:gap-24'>
             
             {/* Text Content */}
@@ -17,37 +18,75 @@ const FeatureSection3 = () => {
                 </p>
             </div>
 
-            {/* Large Image (Image 5) */}
-           
-            <div className='hidden md:block'>
-                <img className='w-full rounded-lg object-cover' src="img5.jpg" alt="House 1" />
-            </div>
+            {/* Large Image- Left Side */}
+              <div className='hidden md:block relative w-full h-200  overflow-hidden rounded-lg'>
+                  <Image
+                      src="/img5.jpg"
+                      alt="House 1"
+                      fill                            
+                      className='object-cover object-center' 
+                      sizes="50vw"
+                  />
+              </div>
         </div>
 
 
-        {/* RIGHT COLUMN (Images on Desktop) */}
-        <div className='w-full md:w-1/2 flex flex-col gap-4 md:gap-12'>
+        {/* RIGHT COLUMN */}
+        <div className='w-full md:w-1/2 flex flex-col gap-4 md:gap-12 '>
             
-            {/* Desktop Layout: Stacked Images */}
+            {/* Desktop */}
             <div className='hidden md:flex flex-col gap-12'>
-                 <img className='w-full rounded-lg object-cover' src="img7.jpg" alt="House 2" />
-                 <img className='w-[70%] self-end rounded-lg object-cover' src="img6.jpg" alt="House 3" />
+                 
+                 {/* Top Image */}
+                 <Image 
+                    src="/img7.jpg" 
+                    alt="House 2"
+                    width={3705} 
+                    height={3850} 
+                    className='w-full rounded-lg object-cover'
+                    sizes="50vw"
+                 />     
+            </div>
+            <div className='hidden md:block h-full w-150  '>
+                <Image 
+                    src="/img6.jpg" 
+                    alt="House 3"
+                    width={4096} 
+                    height={2304} 
+                    className='w-full rounded-lg object-cover'
+                    sizes="50vw" 
+                 />
             </div>
 
-            {/* Mobile Layout: Gallery Grid */}
-            
+            {/* Mobile Layout */}
             <div className='md:hidden flex gap-3 h-64'>
-                {/* Left tall image */}
-                <div className='w-1/2 h-full'>
-                    <img className='w-full h-full object-cover rounded-lg' src="img5.jpg" alt="House 1" />
+                <div className='relative w-1/2 h-full'>
+                    <Image 
+                        src="/img5.jpg" 
+                        alt="House 1"
+                        fill 
+                        className='object-cover rounded-lg'
+                        sizes="50vw"
+                    />
                 </div>
-                {/* Right stacked images */}
                 <div className='w-1/2 h-full flex flex-col gap-3'>
-                    <div className='h-3/5 w-full'>
-                        <img className='w-full h-full object-cover rounded-lg' src="img7.jpg" alt="House 2" />
+                    <div className='relative h-3/5 w-full'>
+                        <Image 
+                            src="/img7.jpg" 
+                            alt="House 2"
+                            fill 
+                            className='object-cover rounded-lg'
+                            sizes="50vw"
+                        />
                     </div>
-                    <div className='h-2/5 w-full'>
-                         <img className='w-full h-full object-cover rounded-lg' src="img6.jpg" alt="House 3" />
+                    <div className='relative h-2/5 w-full'>
+                         <Image 
+                            src="/img6.jpg" 
+                            alt="House 3"
+                            fill 
+                            className='object-cover rounded-lg'
+                            sizes="50vw"
+                          />
                     </div>
                 </div>
             </div>
