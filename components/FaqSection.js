@@ -1,5 +1,5 @@
 import React from "react"
-import { Plus, Minus } from "lucide-react" // Import the icons
+import { Plus, Minus } from "lucide-react" 
 import {
   Accordion,
   AccordionContent,
@@ -9,8 +9,7 @@ import {
 
 const FaqSection = () => {
   return (
-    <section className="w-93.75 h-auto flex flex-col gap-15 pt-15 px-5 pb-15 mx-auto md:w-full md:h-auto md:flex-row md:items-start md:gap-20 md:pt-30 md:px-20 md:pb-30
-    ">
+    <section className="w-full h-auto flex flex-col gap-15 pt-15 px-5 pb-15 mx-auto md:w-full md:h-auto md:flex-row md:items-start md:gap-20 md:pt-30 md:px-20 md:pb-30">
       
       {/* Left Column */}
       <div className="flex flex-col gap-6 md:w-1/2 md:sticky md:top-20">

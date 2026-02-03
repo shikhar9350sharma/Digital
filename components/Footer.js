@@ -3,8 +3,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className='w-93.75 h-auto flex flex-col pt-15 px-5 pb-5 mx-auto bg-white md:w-full md:pt-30 md:px-20 md:pb-10
-    '>
+    <footer className='w-full h-auto flex flex-col pt-15 px-5 pb-5 mx-auto bg-white md:w-full md:pt-30 md:px-20 md:pb-10'>
         <div className='flex flex-col gap-12 md:flex-row md:justify-between md:gap-20 mb-15 md:mb-20'>
             
             {/* Left Side */}
@@ -33,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/*Company */}
+                {/* Company */}
                 <div className='flex flex-col gap-6'>
                     <h4 className='text-[#12161D] font-inter font-semibold text-[18px] leading-6.5'>Company</h4>
                     <ul className='flex flex-col gap-4 text-[#61656E] font-inter font-normal text-[16px] leading-6'>

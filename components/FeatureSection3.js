@@ -1,53 +1,61 @@
 import React from 'react'
 
 const FeatureSection3 = () => {
-    return (
-        <>
+  return (
+    <section className='w-full h-auto flex flex-col gap-10 pt-15 px-5 pb-15 md:flex-row md:justify-between md:gap-20 md:pt-30 md:px-20 md:pb-30'>
+        
+        {/* LEFT COLUMN  */}
+        <div className='w-full md:w-1/2 flex flex-col gap-8 md:gap-24'>
             
-            <section className=' hidden w-93.75 h-182.25 md:flex flex-col gap-15 pt-15 px-5 pb-15 md:w-full md:h-337.75 md:gap-20 md:pt-30 md:pr-20 md:pb-30 md:pl-20'>
-                <div className=' md:w-full md:h-277.75 flex gap-15'>
-                    {/* left  */}
-                    <div className=' flex flex-col gap-24'>
-                        <div className=' w-83.75 h-64.5 md:h-51.5 md:w-137.5 flex flex-col gap-8 '>
-                            <div className='h-24 '><h2 className='font-inter font-medium md:font-semibold text-[36px] leading-12 tracking-[0%] md:text-[44px] md:leading-13 text-[#12161D]'>Find Your Dream <br /> Home Here</h2></div>
-                            <div className='h-40 md:h-19.5 '><p className='text-[#61656E] font-inter font-medium text-[18px] leading-6.5 tracking-[0%]'>You can see for yourself how the Perumnas cluster housing offers beautiful and comfortable housing for you and your family. See photos of the house, environment and facilities we provide here.</p></div>
-                        </div>
-                        <div className=''>
-                            <img className='md:w-137.5 md:h-160 rounded-lg' src="img5.jpg" alt="img" />
-                        </div>
-                    </div>
-                    {/* right  */}
-                    <div className=' flex flex-col gap-12'>
-                        <div><img className='md:w-170 md:h-183.5 rounded-lg' src="img7.jpg" alt="img" /></div>
-                        <div><img className='md:w-115.25 md:h-77.25  rounded-lg' src="img6.jpg" alt="img" /></div>
-                    </div>
-                </div>
+            {/* Text Content */}
+            <div className='flex flex-col gap-4 md:gap-8'>
+                <h2 className='font-inter font-medium md:font-semibold text-[36px] leading-tight md:text-[44px] text-[#12161D]'>
+                    Find Your Dream <br /> Home Here
+                </h2>
+                <p className='text-[#61656E] font-inter font-medium text-[18px] leading-relaxed'>
+                    You can see for yourself how the Perumnas cluster housing offers beautiful and comfortable housing for you and your family. See photos of the house, environment and facilities we provide here.
+                </p>
+            </div>
 
-            </section>
-            <section className='md:hidden w-93.75 h-182.25 flex flex-col gap-15 pt-15 px-5 pb-15 '>
-                
-                {/* top  */}
-                <div className='w-83.75 h-64.5 flex flex-col gap-8 '>
-                    <div className=' w-full h-24  '>
-                        <div className='h-24 w-full'><h2 className='font-inter font-medium  text-[36px] leading-12 tracking-[0%]  text-[#12161D]'>Find Your Dream <br /> Home Here</h2></div>
-                            
-                    </div>
-                    <div><div className='h-32.5 w-full '><p className='text-[#61656E] font-inter font-medium text-[18px] leading-6.5 tracking-[0%]'>You can see for yourself how the Perumnas cluster housing offers beautiful and comfortable housing for you and your family. See photos of the house, environment and facilities we provide here.</p></div></div>
-                </div>
+            {/* Large Image (Image 5) */}
+           
+            <div className='hidden md:block'>
+                <img className='w-full rounded-lg object-cover' src="img5.jpg" alt="House 1" />
+            </div>
+        </div>
+
+
+        {/* RIGHT COLUMN (Images on Desktop) */}
+        <div className='w-full md:w-1/2 flex flex-col gap-4 md:gap-12'>
             
-                {/* bottom  */}
-                <div className='h-72.5 rounded-[2.09px] flex justify-center items-center gap-4'>
-                    <div className='w-[143.95px] h-[167.5px]'><img className='w-full h-full object-center rounded-lg' src="img5.jpg" alt="img" /></div>
-                    <div className='flex flex-col gap-4'>
-                        <div className='w-[177.97px]  h-[192.1px]'><img className=' rounded-lg' src="img7.jpg" alt="img" /></div>
-                        <div className='w-[120.65px] h-[80.87]'><img className=' rounded-lg' src="img6.jpg" alt="img" /></div>
+            {/* Desktop Layout: Stacked Images */}
+            <div className='hidden md:flex flex-col gap-12'>
+                 <img className='w-full rounded-lg object-cover' src="img7.jpg" alt="House 2" />
+                 <img className='w-[70%] self-end rounded-lg object-cover' src="img6.jpg" alt="House 3" />
+            </div>
+
+            {/* Mobile Layout: Gallery Grid */}
+            
+            <div className='md:hidden flex gap-3 h-64'>
+                {/* Left tall image */}
+                <div className='w-1/2 h-full'>
+                    <img className='w-full h-full object-cover rounded-lg' src="img5.jpg" alt="House 1" />
+                </div>
+                {/* Right stacked images */}
+                <div className='w-1/2 h-full flex flex-col gap-3'>
+                    <div className='h-3/5 w-full'>
+                        <img className='w-full h-full object-cover rounded-lg' src="img7.jpg" alt="House 2" />
+                    </div>
+                    <div className='h-2/5 w-full'>
+                         <img className='w-full h-full object-cover rounded-lg' src="img6.jpg" alt="House 3" />
                     </div>
                 </div>
+            </div>
 
-            </section>
-        </>
+        </div>
 
-    )
+    </section>
+  )
 }
 
 export default FeatureSection3
