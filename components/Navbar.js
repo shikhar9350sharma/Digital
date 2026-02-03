@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         {isMenuOpen && (
-            <div className='absolute top-24 right-4 w-48 bg-white rounded-xl shadow-xl p-5 flex flex-col gap-4 md:hidden text-black z-50 animate-in fade-in slide-in-from-top-2'>
+            <div className='absolute top-18 right-4 w-48 bg-white rounded-xl shadow-xl p-5 flex flex-col gap-2 md:hidden text-black z-50 animate-in fade-in slide-in-from-top-2'>
                 <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                     <span className='block font-medium text-lg hover:text-gray-600'>Contact Us</span>
                 </Link>

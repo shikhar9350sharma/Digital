@@ -26,7 +26,7 @@ const HeroSection = () => {
                     alt="Modern Luxury Home"
                     width={4096}
                     height={4062}
-                    className='w-full h-auto block'
+                    className='w-full h-[80vh] md:h-350 object-cover object-center md:object-bottom block'
                     priority={true}
                     sizes="100vw"
                     quality={75}
@@ -38,5 +38,4 @@ const HeroSection = () => {
         </section>
     )
 }
-
 export default HeroSection
