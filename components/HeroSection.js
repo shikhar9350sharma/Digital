@@ -18,13 +18,13 @@ const HeroSection = () => {
                 </div>
             </div>
             {/* Image Background */}
-            <div className="relative w-full overflow-hidden">
+            <div className="relative w-full overflow-hidden ">
                 <Image
                     src="/img1.png"
                     alt="Modern Luxury Home"
                     width={4096}
                     height={4062}
-                    className='w-full h-[80vh] md:h-350 object-cover object-center md:object-bottom block'
+                    className='w-full h-[80vh] md:h-300 object-cover object-center md:object-bottom block'
                     priority={true}
                     sizes="100vw"
                     quality={75}
